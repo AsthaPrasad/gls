@@ -23,13 +23,18 @@ class Guide {
     _handleRequest () {
         this._createRequest()
         .then((result) => {
-           console.log(result);
+            this._dataupload(result);
         },
         (error) => {
             console.log(error);
         });
     }
 
+    _dataupload (result) {
+        result.steps.forEach((step)=>{
+            this.$element.find(step.selector).attr('title',step.content);
+        });
+    }
 }
 
 function attach(selector = ".guide") {
