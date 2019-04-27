@@ -10,6 +10,7 @@ class Guide {
         this._handleRequest();
     }
 
+
     _createRequest () {
         const ajaxOptions = {
         method:'GET',
@@ -20,6 +21,7 @@ class Guide {
         return $.ajax(ajaxOptions);
     }
 
+    //getting the json data
     _handleRequest () {
         this._createRequest()
         .then((result) => {
@@ -30,6 +32,7 @@ class Guide {
         });
     }
 
+    //updating the data in tool-tip
     _dataupload (result) {
         result.steps.forEach((step)=>{
             this.$element.find(step.selector).attr('title',step.content);
