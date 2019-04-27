@@ -19,7 +19,7 @@ python manage.py runserver
 Steps to run test
 1)pip install pytest-django
 2)Navigate to ~\gls(root directory) and run command
-	pytest
+	**pytest**
 	
 
 
