@@ -2,7 +2,7 @@
 This is a sample done for guided learning system.
 
 **Pre-requisite:**<br/>
-Djnago 2.2<br/>
+Django 2.2<br/>
 Python 3.6.8
 
 If not available, we can create virtual env with below commands:<br/>
